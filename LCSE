@@ -43,7 +43,14 @@ public:
     
 };
 
+//FUNCIONES LCSE
 
+void LCSE::InsertarI(int x)
+{
+    Nodo *n=new Nodo(x);
+    
+    if(!Inicio)
+}
 
 void Nodo::Asignasig(Nodo *x)
 {
