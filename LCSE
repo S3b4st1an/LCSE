@@ -26,7 +26,7 @@ public:
 
 class LCSE
 {    private:
-    Nodo *Inicio;
+    Nodo *Inicio,*Fin;
 public:
     void InsertarI(int);
     void InsertarF(int);
@@ -50,6 +50,9 @@ void LCSE::InsertarI(int x)
     Nodo *n=new Nodo(x);
     
     if(!Inicio)
+    {
+        Inicio=Fin
+    }
 }
 
 void Nodo::Asignasig(Nodo *x)
