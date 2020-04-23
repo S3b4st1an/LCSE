@@ -3,11 +3,26 @@
 
 using namespace std;
 
-struct Nodo
+class Nodo
 {
+private:
     int dato;
     Nodo *sig;
-}*inicio,*fin;
+public:
+    Nodo()
+    {    dato=0;
+        sig=NULL;
+    }
+    Nodo(int x)
+    {    dato=x;
+        sig=NULL;
+    }
+    void Asignasig(Nodo*);
+    void Leer(int);
+    void Imprimir();
+    Nodo *Obtienesig();
+    int Obtienedato();
+};
 
 class LCSE
 {    private:
